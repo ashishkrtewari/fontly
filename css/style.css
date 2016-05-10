@@ -75,6 +75,7 @@ input[type=number] {
 .add-break input{
   margin:auto;
   font-size: 15px;
+  min-width: 160px
 }
 footer{
   background-color: #61C791;
