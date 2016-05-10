@@ -16,10 +16,15 @@ header h1{
 .ng-not-empty{
   background-color: #E0FFB3;
 }
-.input-container, input{
+.input-container{
   width: 30%;
+}
+.input-container, input{
   margin: auto;
   min-width: 205px;
+}
+.input-container input{
+  width: 100%;
 }
 input{
   text-align: center;
