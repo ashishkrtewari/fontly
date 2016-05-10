@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html ng-app="fontly" ng-controller="fontCalculator as fontCal">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Fontly</title>
+    <link rel="stylesheet" href="css/normalize.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="css/bootstrap.min.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="css/style.css" media="screen" title="no title" charset="utf-8">
+</head>
+
+<body>
+    <header>
+        <h1 class="text-center">Welcome to Fontly</h1>
+        <h3 class="text-center text-muted">Your font size assistant</h3>
+    </header>
+
+    <div class="container">
+      <input type="number" ng-model="font" placeholder="Enter font value" class="focus" value="">
+        <div class="results text-center">
+            <h3 class="text-center">Generated Font Sizes</h3>
+            <div class="size-cols text-center">
+                <div class="col-md-2" ng-repeat="breakpoint in fontCal.breakpoints">
+                    <ul class="list-unstyled">
+                        <li>{{breakpoint.pixel}} px</li>
+                        <li ng-show="font>0">{{(font/breakpoint.pixel)*100 | number:5}} vw</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <h3 class="text-center">Add Custom Breakpoint</h3>
+        <div class="add-break">
+          <input type="number" ng-model="pixel" value="" placeholder="Enter breakpoint pixel value">
+          <input type="submit" ng-click="fontCal.add(pixel)" value="Add Breakpoint">
+        </div>
+    </div>
+    <script src="js/jquery.min.js" charset="utf-8"></script>
+    <script src="js/angular.min.js" charset="utf-8"></script>
+    <script src="js/app.js" charset="utf-8"></script>
+</body>
+
+</html>
