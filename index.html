@@ -16,11 +16,13 @@
     </header>
 
     <div class="container">
-      <input type="number" ng-model="font" placeholder="Enter font value" class="focus" value="">
+      <div class="input-container">
+        <input type="number" ng-model="font" placeholder="Enter font value" class="focus" value="">
+      </div>
         <div class="results text-center">
             <h3 class="text-center">Generated Font Sizes</h3>
             <div class="size-cols text-center">
-                <div class="col-md-2" ng-repeat="breakpoint in fontCal.breakpoints">
+                <div class="col-md-2 col-sm-4 col-xs-6" ng-repeat="breakpoint in fontCal.breakpoints">
                     <ul class="list-unstyled">
                         <li>{{breakpoint.pixel}} px</li>
                         <li ng-show="font>0">{{(font/breakpoint.pixel)*100 | number:5}} vw</li>
@@ -34,6 +36,7 @@
           <input type="submit" ng-click="fontCal.add(pixel)" value="Add Breakpoint">
         </div>
     </div>
+    <footer class="text-center">Developed by <a href="https://in.linkedin.com/in/ashishkrtewari">Ashish Tewari</a> | Powered by <a href="https://angularjs.org/">AngularJS</a></footer>
     <script src="js/jquery.min.js" charset="utf-8"></script>
     <script src="js/angular.min.js" charset="utf-8"></script>
     <script src="js/app.js" charset="utf-8"></script>
