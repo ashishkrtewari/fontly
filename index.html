@@ -10,16 +10,16 @@
 </head>
 
 <body>
-  <a class="github-fork-ribbon hidden-600" href="https://github.com/cooltewari/fontly" title="Fork Fontly on GitHub">Fork Fontly on GitHub</a>
+    <a class="github-fork-ribbon hidden-600" href="https://github.com/cooltewari/fontly" title="Fork Fontly on GitHub">Fork Fontly on GitHub</a>
     <header>
         <h1 class="text-center">Welcome to Fontly</h1>
         <h3 class="text-center text-muted">Your font size assistant</h3>
     </header>
 
     <div class="container">
-      <div class="input-container">
-        <input class="input" type="number" ng-model="font" placeholder="Enter font value" class="focus" value="">
-      </div>
+        <div class="input-container">
+            <input class="input" type="number" ng-model="font" placeholder="Enter font value" class="focus" value="">
+        </div>
         <div class="results text-center">
             <h3 class="text-center">Generated Font Sizes</h3>
             <div class="size-cols text-center">
@@ -33,20 +33,18 @@
         </div>
         <h3 class="text-center">Add Custom Breakpoint</h3>
         <div class="add-break">
-          <input class="input" type="number" ng-model="pixel" value="" placeholder="Enter breakpoint pixel value">
-          <button type="button" class="input" ng-show="pixel>0" ng-click="fontCal.add(pixel)">
-            Add Breakpoint
-          </button>
+            <input class="input" type="number" ng-model="pixel" value="" placeholder="Enter breakpoint pixel value">
+            <button type="button" class="input" ng-show="pixel>0" ng-click="fontCal.add(pixel)">
+                Add Breakpoint
+            </button>
         </div>
     </div>
     <footer class="text-center">
-      Developed by <a href="https://in.linkedin.com/in/ashishkrtewari">Ashish Tewari</a> | Powered by <a href="https://angularjs.org/">AngularJS</a>
-      <a class="visible-600" href="https://github.com/cooltewari/fontly" title="Fork Fontly on GitHub">Fork Fontly on GitHub</a>
+        Developed by <a href="https://in.linkedin.com/in/ashishkrtewari">Ashish Tewari</a> | Powered by <a href="https://angularjs.org/">AngularJS</a>
+        <a class="visible-600" href="https://github.com/cooltewari/fontly" title="Fork Fontly on GitHub">Fork Fontly on GitHub</a>
     </footer>
     <script src="js/jquery.min.js" charset="utf-8"></script>
     <script src="js/angular.min.js" charset="utf-8"></script>
-    <script src="js/tether.min.js" charset="utf-8"></script>
-    <script src="js/bootstrap.min.js" charset="utf-8"></script>
     <script src="js/app.js" charset="utf-8"></script>
 </body>
 
