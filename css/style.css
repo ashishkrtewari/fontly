@@ -7,7 +7,8 @@ body{
   /*!
  * "Fork me on GitHub" CSS ribbon v0.2.0 | MIT License
  * https://github.com/simonwhitaker/github-fork-ribbon-css
-*/.github-fork-ribbon {
+*/
+.github-fork-ribbon {
 	width:12.1em;
 	height:12.1em;
 	position:absolute;
@@ -86,7 +87,7 @@ header h1{
   width: 30%;
 }
 .input-container, input{
-  margin: auto;
+  margin: 2% auto;
   min-width: 205px;
 }
 .input-container input{
@@ -117,11 +118,11 @@ input[type=number] {
 }
 .size-cols ul{
   border: solid #31797D 2px;
+  margin-bottom: 20px;
 }
 .size-cols ul, .results{
     border-radius: 5px;
     overflow: auto;
-    margin-top: 5%;
     transition: 0.5s;
 }
 .size-cols ul li{
@@ -135,7 +136,10 @@ input[type=number] {
     font-size: 30px;
     background-color: #31797D;
 }
-
+.size-cols ul li:nth-child(2){
+  border: solid #E0FFB3 2px;
+  border-radius: 1px;
+}
 /*=====Add New BreakPoint===*/
 .add-break{
   display: flex;
@@ -158,15 +162,9 @@ input[type=number] {
 footer{
   background-color: #61C791;
   padding: 23px 0;
-  position: relative;
-  bottom: -35px;
-  width: 100%;
 }
 footer a,footer a:hover{
   color:#2A2F36;
-}
-.visible-600{
-  display: none;
 }
 @media (max-width:480px){
   .add-break{
@@ -182,22 +180,4 @@ footer a,footer a:hover{
   .size-cols ul li:first-child {
     font-size: 25px;
   }
-}
-
-@media (max-width:600px) {
-    .hidden-600{
-      visibility: hidden;
-    }
-    .visible-600{
-      display: block;
-    }
-    .visible-600::before {
-      content: "";
-      height: 2px;
-      background-color: #31797D;
-      width: 100%;
-      display: block;
-      border-radius: 50%;
-      margin: 10px 0;
-    }
 }
