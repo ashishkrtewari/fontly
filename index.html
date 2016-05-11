@@ -17,7 +17,7 @@
 
     <div class="container">
       <div class="input-container">
-        <input type="number" ng-model="font" placeholder="Enter font value" class="focus" value="">
+        <input class="input" type="number" ng-model="font" placeholder="Enter font value" class="focus" value="">
       </div>
         <div class="results text-center">
             <h3 class="text-center">Generated Font Sizes</h3>
@@ -32,13 +32,17 @@
         </div>
         <h3 class="text-center">Add Custom Breakpoint</h3>
         <div class="add-break">
-          <input type="number" ng-model="pixel" value="" placeholder="Enter breakpoint pixel value">
-          <input type="submit" ng-click="fontCal.add(pixel)" value="Add Breakpoint">
+          <input class="input" type="number" ng-model="pixel" value="" placeholder="Enter breakpoint pixel value">
+          <button type="button" class="input" ng-show="pixel>0" ng-click="fontCal.add(pixel)">
+            Add Breakpoint
+          </button>
         </div>
     </div>
     <footer class="text-center">Developed by <a href="https://in.linkedin.com/in/ashishkrtewari">Ashish Tewari</a> | Powered by <a href="https://angularjs.org/">AngularJS</a></footer>
     <script src="js/jquery.min.js" charset="utf-8"></script>
     <script src="js/angular.min.js" charset="utf-8"></script>
+    <script src="js/tether.min.js" charset="utf-8"></script>
+    <script src="js/bootstrap.min.js" charset="utf-8"></script>
     <script src="js/app.js" charset="utf-8"></script>
 </body>
 

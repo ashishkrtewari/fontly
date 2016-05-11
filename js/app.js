@@ -21,10 +21,10 @@ angular.module('fontly', []).controller("fontCalculator", function(){
     }
   ]
 
-this.add = function(newbreakpoint){
-  console.log("adding breakpoint: " + newbreakpoint + " px");
-  var breakpoint = {pixel:newbreakpoint};
-  this.breakpoints.push(breakpoint);
-  breakpoint= {};
-};
+  this.add = function(newbreakpoint){
+    console.log("adding breakpoint: " + newbreakpoint + " px");
+    var breakpoint = {pixel:newbreakpoint};
+    this.breakpoints.push(breakpoint);
+    breakpoint = {};
+  };
 });
