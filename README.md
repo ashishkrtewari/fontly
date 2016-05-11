@@ -7,7 +7,7 @@ Forget using Calculator for every conversion.
 <h3>Core features</h3>
 <ul>
   <li>Enter a font size(without "px") in the main input box to convert it into vw (viewport width) format.</li>
-  <li>As you enter a valid pixel value in the input box, font sizes are generated as per default breakpoints in the Generated Font size section</li>
+  <li>As you enter a valid pixel value in the input box, font sizes are generated as per default breakpoints in the "Generated Font Size" section</li>
   <li>Add custom breakpoints as per your project in the "Add Custom breakpoint" section.</li>
   <li>Enter a valid breakpoint pixel value in the given input box.</li>
   <li>Click the button "Add new Breakpoint", to push the entered breakpoint to the "Generated Font Size" section.</li>
