@@ -5,6 +5,8 @@ angular.module('fontly', []).controller("fontCalculator", function() {
     }, {
         pixel: 480
     }, {
+        pixel: 640
+    }, {
         pixel: 768
     }, {
         pixel: 992
